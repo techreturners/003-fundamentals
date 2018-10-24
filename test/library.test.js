@@ -1,11 +1,17 @@
-const alarm = require('../app/alarm');
+const library = require('../app/library');
 
-test('Moans if too early', () => {
-  let timeNow = new Date();
-  timeNow.setHours(11);
-  expect(alarm.wakeup(timeNow)).toBe("Ugggggh its too early - I'm not waking up yet");
+test('Check we have all books', () => {
+  const expectedBooksInLibrary = [{
+
+  }];
+
+  expect(library.getAllBooks()).toEqual(expectedBooksInLibrary);
 });
 
-test('Snoozing for a set amount', () => {
-  expect(alarm.snooze()).toBe(10);
+test('Check available books', () => {
+  const availableBooksInLibrary = [{
+
+  }];
+
+  expect(library.getAllAvailableBooks()).toEqual(availableBooksInLibrary);
 });

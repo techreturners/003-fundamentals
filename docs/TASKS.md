@@ -14,9 +14,25 @@ Then Person B writes the test and code for task 4.
 
 Person A writes the code and implements the function for task 5 and so on and so on.
 
-## 1) Fixing the test
+## 1) What use is an empty library?
 
-TBC
+The library currently doesn't have any books! We've had word that 3 new books have arrived.
+
+Each book has the following properties/attributes associated with it:
+
+* Title (String)
+* Author (String)
+* Available (Boolean)
+
+The three books we've had delivered are:
+
+* Don't Make Me Think by Steve Krug
+* Site Reliability Engineering by Niall Richard Murphy
+* Fantastic Mr Fox by Roald Dahl
+
+You can assume that each book has not yet been borrowed by anyone.
+
+Using the information above make sure the library is now populated with the new book deliveries.
 
 
 # Written questions
