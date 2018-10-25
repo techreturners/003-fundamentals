@@ -1,7 +1,7 @@
 const library = require('../app/library');
 
 test('Check we have all books and stocked correctly', () => {
-  const expectedBooksInLibrary = [{
+  let expectedBooksInLibrary = [{
 
   }];
 
@@ -9,7 +9,7 @@ test('Check we have all books and stocked correctly', () => {
 });
 
 test('Check available books', () => {
-  const availableBooksInLibrary = [{
+  let availableBooksInLibrary = [{
 
   }];
 
