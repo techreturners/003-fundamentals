@@ -1,14 +1,9 @@
-let books = [];
+class Library {
+  constructor(books) {
+    this.books = books;
+  }
 
-function getAllBooks() {
-    
-    return books;
+  add() {}
 }
 
-function getAllAvailableBooks() {
-}
-
-module.exports = {
-    getAllBooks,
-    getAllAvailableBooks
-};
+module.exports = Library;

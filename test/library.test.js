@@ -1,17 +1,16 @@
-const library = require('../app/library');
+const Library = require("../app/library");
 
-test('Check we have all books and stocked correctly', () => {
-  let expectedBooksInLibrary = [{
-
-  }];
-
-  expect(library.getAllBooks()).toEqual(expectedBooksInLibrary);
+test("Check that a library can be instantiated with some books", () => {
+  const library = new Library([
+    // Add some books here
+  ]);
+  expect(library.books).toEqual([
+    // How should the books look?
+  ]);
 });
 
-test('Check available books', () => {
-  let availableBooksInLibrary = [{
-
-  }];
-
-  expect(library.getAllAvailableBooks()).toEqual(availableBooksInLibrary);
+test("Check that a book can be added to the library", () => {
+  const library = new Library([]);
+  library.add();
+  expect(library.books).toEqual([]);
 });
